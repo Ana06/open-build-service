@@ -5,7 +5,7 @@ class FullTextSearchTest < ActiveSupport::TestCase
   fixtures :all
 
   def setup
-    OBSApi::TestSphinx.ensure
+    OBSApi::TestSphinx.ensure_is_running
     User.session = nil
   end
 

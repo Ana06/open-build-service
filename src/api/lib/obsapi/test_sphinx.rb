@@ -2,7 +2,7 @@ module OBSApi
   class TestSphinx
     @started = false
 
-    def self.ensure
+    def self.ensure_is_running
       return true unless Rails.env.test?
       if @started
         Rails.logger.debug 'Skipping Sphinx indexing'
